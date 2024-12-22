@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "ministry", sans-serif;
+    font-style: normal;
+}
+body {
+    
+}
+.contenedor {
+    background: url('../../users/imagenes/estadio3.jpg') no-repeat center top;
+    width: 100%;
+    height: 100vh;
+    background-blend-mode: soft-light; 
+    background-color: rgba(0, 0, 0, 1);
+    animation-name: fondo;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.logo img {
+    transition: all 0.3s;
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.logo img:hover {
+    transform: scale(1.01);
+}
+@keyframes logo {
+
+    0% {opacity: 0;}
+    100% { opacity: 1;}
+}
+
+.redes-boton {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    padding: 50px 50px;
+    gap: 1em;
+}
+.redes-boton i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    animation-name: redes;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,1);
+}
+.redes-boton i {
+    transition: all 0.3s;
+}
+.redes-boton i:hover {
+    transform: scale(1.05);
+}
+.redes-boton a {
+    text-decoration: none;
+}
+.redes-boton button {
+    transition: all 0.3s;
+}
+.redes-boton button:hover {
+    transform: scale(1.05);
+}
+.redes-boton p {
+    color: #000;
+    font-size: 17px;
+    font-weight: 400;
+}
+.redes-boton button {
+    text-align: center;
+    background-color: #fff;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    animation-name: redes;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,1);
+}
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7em;
+}
+@keyframes redes {
+    0% {opacity: 0;}
+    100% { opacity: 1;}
+}
+@keyframes boton {
+    0% {opacity: 0;}
+    100% { opacity: 1;}
+}
+@keyframes fondo {
+    0% {background-color: rgba(0, 0, 0, 1);}
+    100% { background-color: rgba(0, 0, 0, 0.75);}
+}
+
+@media (max-width: 1360px) {
+    .redes-boton {
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+    .redes-boton button {
+        position: relative;
+    }
+    .logo img {
+        width: 350px;
+        height: 350px;
+    }
+}
+@media (max-width: 960px) {
+    .logo img {
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (max-width: 475px) {
+    body {
+        height: 100vh;
+    }
+    .redes-boton {
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        gap: 0;
+        text-align: center;
+        position: relative;
+        padding: 0px;
+        top: -106px;
+        height: 640px;
+    }
+    .redes-boton button {
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        gap: 0;
+        width: 200px;
+        height: 50px;
+        position: relative;
+        left: 35px;
+        top: 40px;
+    }
+    .redes-boton i {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        right: 35px;
+        top: 40px;
+    }
+    .fa-brands, .fa-instagram, .fa-2x {
+        border: 25px solid #fff;
+    }
+    .redes-boton p {
+        font-size: 13px;
+    }
+}
+@media (max-width: 425px) {
+    .redes-boton {
+        gap: 4em;
+    }
+    .redes-boton button {
+        width: 150px;
+        height: 50px;
+        position: relative;
+        top: 40px;
+        left: 15px;
+    }
+    .redes-boton button p {
+        font-size: 13px;
+    }
+    .redes-boton i {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        top: 40px;
+        left: -10px;
+    }
+}
+@media (max-width: 375px){
+    .redes-boton {
+        gap: 1em;
+    }
+    .logo img {
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (max-width: 345px) {
+    .redes-boton {
+        gap: 0;
+    }
+}

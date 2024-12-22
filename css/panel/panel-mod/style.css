@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    background: rgb(189, 189, 189);
+}
+header {
+    padding: 15px;
+    color: white;
+    background: #222222;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+header .menu a:hover {
+    border-bottom: 1px solid #fff;
+}
+header a {
+    color: white;
+    text-decoration: none;;
+}
+main section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+}
+main h2 {
+    text-align: center;
+}
+caption {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: black;
+}
+tbody, thead {
+    font-size: 25px;
+}
+table {
+    color: white;
+    background-color: black;
+    padding: 25px;
+    border: 3px solid #000;
+    border-radius: 25px;
+}
+tr td a {
+    text-decoration: none;
+    margin-left: 20px;
+}
+footer {
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    bottom: 25px;
+}
+label {
+    font-size: 20px;
+    margin: 15px;
+}
+form {
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 3px solid #fff;
+    border-radius: 25px;
+    background: #222222;
+    color: white;
+    gap: 15px;
+}
+input {
+    border: none;
+    padding: 5px;
+    border-radius: 25px;
+}
+input[id='titulo'] {
+    width: 350px;
+}
+p a {
+    text-decoration: none;
+    color: white;
+}
+p a:hover {
+    border-bottom: 1px solid #fff;
+}
+.text-panel {
+    display: flex;
+}
